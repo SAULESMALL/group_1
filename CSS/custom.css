@@ -1,0 +1,182 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d9ac26;
+    padding: 20px 0;
+    border-bottom: 2px solid #000000;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure it stretches across the entire navbar */
+}
+
+.navbar-brand img {
+    display: block;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+    background: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(0,0,0,.55)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E') center/1.5em no-repeat;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: none;
+    }
+}
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 100px; /* Increased space between the image box and the header */
+    padding: 0 20px; /* Padding to maintain space from the sides */
+}
+
+.image-box {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Ensure rounded corners are visible */
+    border-radius: 20px; /* Rounded edges */
+}
+
+.image-link {
+    position: absolute;
+    bottom: 20px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none; /* Remove default link underline */
+    z-index: 2; /* Ensure it's above the image */
+}
+
+.image-link:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d9ac26; /* Change color to pink */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px; /* Change font size */
+    text-shadow: -1px -1px 0 #000,  
+                  1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                  1px 1px 0 #000
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Adjust z-index to place the image behind the link */
+.image-box img {
+    z-index: 1; /* Lower z-index to place it behind the link */
+    width: 100%; /* Ensure image fills the container */
+    height: auto; /* Maintain aspect ratio */
+}
+.small-images-container {
+    text-align: center;
+    margin-top: 40px; /* Adjust as needed */
+    height: 200px; /* Fixed height for small image containers */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    font-size: 0; /* Remove inline-block whitespace */
+}
+
+.small-images .image-box {
+    width: 200px; /* Fixed width for all small image boxes */
+    height: 200px; /* Fixed height for all small image boxes */
+    display: inline-block; /* Ensure they stay in the same line */
+    vertical-align: top;
+    margin: 0 10px; /* Adjust spacing between boxes as needed */
+    font-size: 1rem; /* Reset font size */
+}
+
+.small-images .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and fill container */
+}
+
+.footer {
+    background-color: #d9ac26; /* Same color as the header */
+    padding: 20px 0;
+    border-top: 2px solid #000000;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
