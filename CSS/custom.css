@@ -6,13 +6,13 @@
     background-color: #d9ac26;
     padding: 20px 0;
     border-bottom: 2px solid #000000;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Ensure it stretches across the entire navbar */
+    width: 100%; 
 }
 
 .navbar-brand img {
@@ -64,28 +64,28 @@
     position: relative;
     text-align: center;
     color: white;
-    margin-top: 100px; /* Increased space between the image box and the header */
-    padding: 0 20px; /* Padding to maintain space from the sides */
+    margin-top: 100px; 
+    padding: 0 20px;
 }
 
 .image-box {
     position: relative;
     display: inline-block;
-    overflow: hidden; /* Ensure rounded corners are visible */
-    border-radius: 20px; /* Rounded edges */
+    overflow: hidden;
+    border-radius: 20px; 
 }
 
 .image-link {
     position: absolute;
-    bottom: 20px; /* Adjust this value as needed */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
     padding: 10px 20px;
     border-radius: 20px;
-    text-decoration: none; /* Remove default link underline */
-    z-index: 2; /* Ensure it's above the image */
+    text-decoration: none;
+    z-index: 2;
 }
 
 .image-link:hover {
@@ -98,9 +98,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #d9ac26; /* Change color to pink */
+    color: #d9ac26;
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px; /* Change font size */
+    font-size: 32px;
     text-shadow: -1px -1px 0 #000,  
                   1px -1px 0 #000,
                  -1px 1px 0 #000,
@@ -114,41 +114,41 @@
     transform: translateX(-50%);
 }
 
-/* Adjust z-index to place the image behind the link */
+
 .image-box img {
-    z-index: 1; /* Lower z-index to place it behind the link */
-    width: 100%; /* Ensure image fills the container */
-    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+    width: 100%;
+    height: auto;
 }
 .small-images-container {
     text-align: center;
-    margin-top: 40px; /* Adjust as needed */
-    height: 200px; /* Fixed height for small image containers */
-    white-space: nowrap; /* Prevent wrapping */
-    overflow-x: auto; /* Enable horizontal scrolling if necessary */
-    font-size: 0; /* Remove inline-block whitespace */
+    margin-top: 40px;
+    height: 200px; 
+    white-space: nowrap; 
+    overflow-x: auto;
+    font-size: 0;
 }
 
 .small-images .image-box {
-    width: 200px; /* Fixed width for all small image boxes */
-    height: 200px; /* Fixed height for all small image boxes */
-    display: inline-block; /* Ensure they stay in the same line */
+    width: 200px; 
+    height: 200px; 
+    display: inline-block;
     vertical-align: top;
-    margin: 0 10px; /* Adjust spacing between boxes as needed */
-    font-size: 1rem; /* Reset font size */
+    margin: 0 10px;
+    font-size: 1rem;
 }
 
 .small-images .image-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and fill container */
+    object-fit: cover;
 }
 
 .footer {
-    background-color: #d9ac26; /* Same color as the header */
+    background-color: #d9ac26;
     padding: 20px 0;
     border-top: 2px solid #000000;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000;
 }
 
 .footer-content {
