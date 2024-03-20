@@ -68,9 +68,7 @@
 .image-container {
     position: fixed;
     bottom: 140px;
-    /* Adjust distance from the bottom */
-    right: 340px;
-    /* Adjust distance from the right */
+    right: 100px;
     border: 10px solid #f0f0f0;
     max-width: 400px;
     max-height: 400px;
